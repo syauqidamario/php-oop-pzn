@@ -1,16 +1,7 @@
 <?php
 
-require_once "data/Series.php";
+require_once "data/Person.php";
 
-$series = new Series();
-var_dump($series);
+$person = new Person("Yuichi", "Nakamura");
 
-$series = new Series();
-$series->title = "Kamen Rider Gotchard";
-$series->series_producer = "Yosuke Minato";
-$series->series_writer = "Hiroki Uchida";
-$series->seriesTitle("Kamen Rider Geats");
-
-echo "Title: {$series->title}" . PHP_EOL;
-echo "Series Producer: {$series->series_producer}" . PHP_EOL;
-echo "Series Writer: {$series->series_writer}" . PHP_EOL;
+var_dump($person);
