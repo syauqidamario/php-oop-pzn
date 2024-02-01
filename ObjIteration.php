@@ -9,13 +9,10 @@ class Data implements IteratorAggregate
 
     public function getIterator()
     {
-        // TODO: Implement getIterator() method.
-        return new ArrayIterator([
-            "first" => $this->first,
-            "second" => $this->second,
-            "third" => $this->third,
-            "fourth" => $this->fourth,
-        ]);
+            yield "first" => $this->first;
+            yield "second" => $this->second;
+            yield "third" => $this->third;
+            yield "fourth" => $this->fourth;
     }
 }
 
@@ -25,5 +22,5 @@ foreach($data as $key => $value){
     echo "$key : $value" . PHP_EOL;
 }
 
-//Iterator is an interfacte for iterations.
+//Iterator is an interface for iterations.
 //IteratorAggregate interface is used for manual iterations by override getIterator() function
