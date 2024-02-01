@@ -3,9 +3,9 @@
 require_once "data/Manager.php";
 
 $manager = new Manager();
-$manager->name = "Toru";
-$manager->sayHi("Kunio");
+$manager->name = "Seiji";
+$manager->sayHi("Toshihiko");
 
 $vp = new VicePresident();
-$vp->name = "Takahiro";
-$vp->sayHello("Jun");
+$vp->name = "Keiichi";
+$vp->sayHi("Toshihiko");
